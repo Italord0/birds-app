@@ -1,3 +1,6 @@
+package ui
+
+import model.Bird
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
 import io.ktor.client.*
 import io.ktor.client.call.*
@@ -29,7 +32,7 @@ class BirdViewModel : ViewModel() {
         }
     }
 
-    private val httpClient: HttpClient = HttpClient() {
+    private val httpClient: HttpClient = HttpClient {
         install(ContentNegotiation) {
             json()
         }
