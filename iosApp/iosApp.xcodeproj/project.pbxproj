@@ -39,6 +39,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5FDD8024D3FAA614494B5516 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
 		5FDD81B81AB9D70E81FAB260 /* xcuserdata */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +62,37 @@
 			path = xcschemes;
 			sourceTree = "<group>";
 		};
+		5FDD83B5864F8D8F547B903E /* project.xcworkspace */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD8A403354E0300E9D3D09 /* xcshareddata */,
+			);
+			name = project.xcworkspace;
+			path = iosApp.xcodeproj/project.xcworkspace;
+			sourceTree = "<group>";
+		};
 		5FDD8762CF32423C440C5C7C /* italo.xcuserdatad */ = {
 			isa = PBXGroup;
 			children = (
 				5FDD8232099DFB2379770543 /* xcschemes */,
 			);
 			path = italo.xcuserdatad;
+			sourceTree = "<group>";
+		};
+		5FDD8A403354E0300E9D3D09 /* xcshareddata */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD8DCA43E271C5436E7E62 /* swiftpm */,
+			);
+			path = xcshareddata;
+			sourceTree = "<group>";
+		};
+		5FDD8DCA43E271C5436E7E62 /* swiftpm */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD8024D3FAA614494B5516 /* configuration */,
+			);
+			path = swiftpm;
 			sourceTree = "<group>";
 		};
 		7555FF72242A565900829871 = {
@@ -71,6 +103,7 @@
 				7555FF7C242A565900829871 /* Products */,
 				42799AB246E5F90AF97AA0EF /* Frameworks */,
 				5FDD81B81AB9D70E81FAB260 /* xcuserdata */,
+				5FDD83B5864F8D8F547B903E /* project.xcworkspace */,
 			);
 			sourceTree = "<group>";
 		};
