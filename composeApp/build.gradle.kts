@@ -5,13 +5,14 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.kotlinxSerialization)
 }
 
 kotlin {
     androidTarget {
         compilations.all {
             kotlinOptions {
-                jvmTarget = "1.8"
+                jvmTarget = "11"
             }
         }
     }
@@ -35,6 +36,13 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
+
+            //OKHTTP ktor engine for Android
+            implementation(libs.ktor.client.okhttp)
+        }
+        iosMain.dependencies {
+            //Dawin ktor engine for iOS
+            implementation(libs.ktor.client.darwin)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -43,9 +51,24 @@ kotlin {
             implementation(compose.ui)
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
+
+            //ktor
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.serialization.kotlinx.json)
+
+            //moko
+            implementation(libs.moko.mvvm.core)
+            implementation(libs.moko.mvvm.compose)
+
+            //kamel
+            implementation(libs.kamel)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
+
+            //OKHTTP ktor engine for Desktop
+            implementation(libs.ktor.client.okhttp)
         }
     }
 }
