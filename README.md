@@ -1,14 +1,20 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
+ 
+## 📱 💻 Bird App
+Simple Compose Multiplatform app that implements networking to fetch birds API using MVVM (Android, iOS, MacOS)
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
-
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+Based on [JetBrains Compose Multiplatform tutorial](https://youtu.be/IGuVIRZzVTk)
 
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+<p float="left">
+<img src="https://github.com/Italord0/birds-app/assets/32901063/1e4be35d-6ec2-443a-aea0-2d8b3f51d610" width="250">
+<img src="https://github.com/Italord0/birds-app/assets/32901063/dc283e80-09c3-4efb-9bf1-c820cf54da5b" width="250">
+<img src="https://github.com/Italord0/birds-app/assets/32901063/27da770b-4f5d-47af-bb3a-c0446533dc91" width="500">
+</p>
+
+## :rocket: Techs and Libs
+This project uses the following libraries:
+- [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
+- [Moko MVVM](https://github.com/icerockdev/moko-mvvm)
+- [Ktor](https://ktor.io/)
+- [Kamel](https://github.com/Kamel-Media/Kamel)
+- [Voyager](https://voyager.adriel.cafe/)
