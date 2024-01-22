@@ -1,6 +1,6 @@
  
 ## 📱 💻 Bird App
-Simple Compose Multiplatform app that implements networking to fetch birds API using MVVM (Android, iOS, MacOS)
+Simple Compose Multiplatform app that implements networking to fetch birds API using MVVM (Android, iOS, Desktop)
 
 Based on [JetBrains Compose Multiplatform tutorial](https://youtu.be/IGuVIRZzVTk)
 
