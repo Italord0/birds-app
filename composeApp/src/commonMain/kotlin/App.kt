@@ -1,10 +1,14 @@
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
-import ui.BirdScreen
+import cafe.adriel.voyager.navigator.Navigator
+import cafe.adriel.voyager.transitions.SlideTransition
+import ui.bird.BirdScreen
 
 @Composable
 fun App() {
     MaterialTheme {
-        BirdScreen()
+        Navigator(screens = listOf(BirdScreen())) { navigator ->
+            SlideTransition(navigator)
+        }
     }
 }

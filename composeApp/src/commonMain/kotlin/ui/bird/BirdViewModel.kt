@@ -1,4 +1,4 @@
-package ui
+package ui.bird
 
 import model.Bird
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
@@ -11,8 +11,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-
-data class BirdUiState(val birds: List<Bird>)
 
 class BirdViewModel : ViewModel() {
 
